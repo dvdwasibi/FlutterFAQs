@@ -1,5 +1,5 @@
-# FlutterGotchas
-This is a list of "Gotchas" that I've encountered in [Flutter](https://flutter.io/).
+# FlutterFAQs
+Pro and Semi-pro tips for [Flutter](https://flutter.io/).
 
 *Please contribute if you encounter anything too. Just file a PR!*
 
