@@ -16,7 +16,7 @@ new Material(
 );
 
 ```
-### [CircleAvatar](https://docs.flutter.io/flutter/material/CircleAvatar-class.html) will not radially clip it's background image.
+### [CircleAvatar](https://docs.flutter.io/flutter/material/CircleAvatar-class.html) will not radially clip its background image.
 * `CircleAvatar` (despite the name) will not actually clip a `backgroundImage` to a circle: [Issue](https://github.com/flutter/flutter/issues/5306)
 * The most performant approach is to probably pre-process any avatar image beforehand and clip it to a circle.
 * However this is not always possible and brings additional overhead.
