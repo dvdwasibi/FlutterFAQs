@@ -38,6 +38,31 @@ new Container(
 )
 ```
 
+## Layout
+
+### Use [Stack](https://docs.flutter.io/flutter/widgets/Stack-class.html) to mimic "Absolute Positioning" in web land
+* If you come from a web-dev background and you want to position a widget relative to another widget, the `Stack` widget is your friend.
+* Example:
+  * Say you want to add an "annotation icon" to a CircleAvatar:
+  * ![](https://github.com/dvdwasibi/FlutterGotchas/blob/master/assets/images/stack.png?raw=true)
+  * Create a `Stack` with the avatar as the first child. The *'z-index'* of each stack child will be based on order of appearance in the child list.
+  * Because you want to position the icon relative to the avatar, you need to wrap it inside a [`Positioned`](https://docs.flutter.io/flutter/widgets/Positioned-class.html) widget which will place it relative to the stack. Add that as the next child in the list.
+
+```dart
+new Stack(
+  children: <Widget>[
+    new CircleAvatar( ... ),
+    new Positioned(
+        // This will place the icon at the bottom right hand corner
+        right: 2.0,
+        bottom: 2.0,
+        child: new Icon(...)
+    )
+  ]
+);
+```
+
+
 ## Testing
 
 ### Use [WidgetTester.pump](https://docs.flutter.io/flutter/flutter_test/WidgetTester/pump.html) if you have to test the end results of a user interaction that leads to many animations.
@@ -70,7 +95,7 @@ await tester.pump(); // rebuild after the callback removes the entry
 ## Bonus
 
 ### A group of flutter devs working together is called a Kaleidoscope
- ![FlutterFly](https://github.com/dvdwasibi/FlutterGotchas/blob/master/assets/images/Screen%20Shot%202016-09-02%20at%208.53.30%20AM.png?raw=true)
+ ![FlutterFly](https://github.com/dvdwasibi/FlutterGotchas/blob/master/assets/images/butterfly.png?raw=true)
 
 ### Listen to Hustlin'/Flutterin' by Rick Ross to reduce bug count.
 * Listen to [Hustlin'](http://genius.com/Rick-ross-hustlin-lyrics) by Rick Ross
@@ -78,4 +103,4 @@ await tester.pump(); // rebuild after the callback removes the entry
 * Expect to see about 30-50% less bugs in your Flutter code
 * Repeat and prosper
 
-![Flutter'](https://pbs.twimg.com/media/Cq5ICdkUkAEFt0Y.png:large)
+![Flutterin'](https://pbs.twimg.com/media/Cq5ICdkUkAEFt0Y.png:large)
