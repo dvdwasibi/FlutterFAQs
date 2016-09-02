@@ -52,7 +52,7 @@ new Container(
 * And only then does the `onDismissed` function gets called.
 * So make sure to call `WidgetTester.pump` for each event before testing the completed logic of the callback.
 
-```
+```dart
 // Simulate the swipe
 await tester.fling( ... )
 
