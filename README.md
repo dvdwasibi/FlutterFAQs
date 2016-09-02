@@ -43,8 +43,7 @@ new Container(
 ### Use [Stack](https://docs.flutter.io/flutter/widgets/Stack-class.html) to mimic "Absolute Positioning" in web land
 * If you come from a web-dev background and you want to position a widget relative to another widget, the `Stack` widget is your friend.
 * Example:
-  * Say you want to add an "annotation icon" to a CircleAvatar:
-  * ![](https://github.com/dvdwasibi/FlutterGotchas/blob/master/assets/images/stack.png?raw=true)
+  * Say you want to add an "annotation icon" to a CircleAvatar: ![](https://github.com/dvdwasibi/FlutterGotchas/blob/master/assets/images/stack.png?raw=true)
   * Create a `Stack` with the avatar as the first child. The *'z-index'* of each stack child will be based on order of appearance in the child list.
   * Because you want to position the icon relative to the avatar, you need to wrap it inside a [`Positioned`](https://docs.flutter.io/flutter/widgets/Positioned-class.html) widget which will place it relative to the stack. Add that as the next child in the list.
 
@@ -52,8 +51,8 @@ new Container(
 new Stack(
   children: <Widget>[
     new CircleAvatar( ... ),
+    // This will place the icon at the bottom right hand corner
     new Positioned(
-        // This will place the icon at the bottom right hand corner
         right: 2.0,
         bottom: 2.0,
         child: new Icon(...)
