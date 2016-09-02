@@ -1,6 +1,9 @@
 # FlutterGotchas
 This is a list of "Gotchas" that I've encountered in [Flutter](https://flutter.io/).
 
+*Please contribute if you encounter anything too. Just file a PR!*
+
+
 ## Widgets
 
 ### Use a [Material](https://docs.flutter.io/flutter/material/Material-class.html) behind a [InkWell](https://docs.flutter.io/flutter/material/InkWell-class.html)
@@ -67,10 +70,12 @@ await tester.pump(); // rebuild after the callback removes the entry
 ## Bonus
 
 ### A group of flutter devs working together is called a Kaleidoscope
+ ![FlutterFly](https://github.com/dvdwasibi/FlutterGotchas/blob/master/assets/images/Screen%20Shot%202016-09-02%20at%208.53.30%20AM.png?raw=true)
 
 ### Listen to Hustlin'/Flutterin' by Rick Ross to reduce bug count.
 * Listen to [Hustlin'](http://genius.com/Rick-ross-hustlin-lyrics) by Rick Ross
 * Single along but replace all instances of `Hustlin'` with `Flutterin'`
 * Expect to see about 30-50% less bugs in your Flutter code
 * Repeat and prosper
+
 ![Flutter'](https://pbs.twimg.com/media/Cq5ICdkUkAEFt0Y.png:large)
