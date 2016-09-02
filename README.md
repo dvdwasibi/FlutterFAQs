@@ -74,7 +74,7 @@ await tester.pump(); // rebuild after the callback removes the entry
 
 ### Listen to Hustlin'/Flutterin' by Rick Ross to reduce bug count.
 * Listen to [Hustlin'](http://genius.com/Rick-ross-hustlin-lyrics) by Rick Ross
-* Single along but replace all instances of `Hustlin'` with `Flutterin'`
+* Sing along but replace all instances of `Hustlin'` with `Flutterin'`
 * Expect to see about 30-50% less bugs in your Flutter code
 * Repeat and prosper
 
