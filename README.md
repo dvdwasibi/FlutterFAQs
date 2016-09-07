@@ -62,6 +62,16 @@ new Stack(
 );
 ```
 
+### Use [MediaQuery](https://docs.flutter.io/flutter/widgets/MediaQuery-class.html) to retrieve the screen size if needed
+* Use the `BuildContext` parameter of a widget's build function as the parameter for `MediaQuery.of()`
+
+```dart
+@override
+Widget build(BuildContext context) {
+  Size screenSize = MediaQuery.of(context).size;
+}
+```
+
 
 ## Testing
 
