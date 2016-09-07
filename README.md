@@ -69,6 +69,9 @@ new Stack(
 @override
 Widget build(BuildContext context) {
   Size screenSize = MediaQuery.of(context).size;
+  double width = screenSize.width;
+  double height = screenSize.height;
+  // ...
 }
 ```
 
